@@ -24,13 +24,6 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
 	
 _*${ucapanWaktu} ${pushname !== undefined ? pushname : 'Kak'} 👋*_
 
- *INFO BOT*
- Library : *Baileys-MD*
- Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
- *WIB* : ${moment(Date.now()).tz('Asia/Jakarta').locale('id').format('HH:mm:ss z')}
- *WITA* : ${moment(Date.now()).tz('Asia/Makassar').locale('id').format('HH:mm:ss z')}
- *WIT* : ${moment(Date.now()).tz('Asia/Jayapura').locale('id').format('HH:mm:ss z')}
-
  *INFO USER*
  Status : ${isOwner ? 'Owner' : isPremium ? 'Premium' : 'Free'}
  Limit Harian : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
